@@ -1,0 +1,132 @@
+/* general */
+* {
+    list-style: none;
+}
+
+:root {
+    --primary-color: #222;
+    --accent-color: #2262A0;
+}
+
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.text-white-100-hover:hover {
+    color: white;
+}
+
+.shadow-md {
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.301);
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+/* nav */
+.nav-item a:hover {
+    color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* hero */
+.hero {
+    background-image: url(https://image-us.samsung.com/us/smartphones/galaxy-s26/images/galaxy-s26-features-kv.jpg?imbypass=true);
+    background-size: cover;
+    background-position-x: right;
+}
+
+/* Brands */
+.brands h2, .shop h2 {
+    text-transform: capitalize;
+    width: fit-content;
+    text-align: start;
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.brands .img {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands .img img {
+    max-width: 150px;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.brands  .img {
+    transition: 200ms all;
+}
+
+.brands .img:hover {
+    transform: translateY(-15px);
+}
+
+/* shope */
+.iphone {
+    transform: scale(0.7);
+}
+
+.shop .img {
+    height: 350px;
+}
+
+.shop .child {
+    transition: 250ms all;
+}
+
+.shop .child:hover {
+    box-shadow: 1px 5px 7px 1px #0000004d;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--primary-color);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);;
+}
+
+footer .links ul li {
+    transition: 200ms all;
+}
+
+footer .links ul li a {
+    padding-bottom: 2px;
+}
+
+footer .links ul li a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+footer .links ul li:hover {
+    transform: translateY(-2px);
+}
+
+footer .contact .icons a {
+    padding: 2px;
+    font-size: 25px;
+    transition: 250ms all;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer .contact .icons a:hover {
+    color:white;
+}
+
+footer .copy {
+    text-align: center;
+}
