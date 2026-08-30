@@ -1,0 +1,366 @@
+/* general */
+* {
+    list-style: none;
+}
+
+:root {
+    --primary-color: #222;
+    --accent-color: #2262A0;
+}
+
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.text-white-100-hover:hover {
+    color: white;
+}
+
+.shadow-md {
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.301);
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+/* nav */
+.nav-item a:hover {
+    color: var(--accent-color);
+    color: var(--accent-color);
+}
+/* Base Section Formatting */
+.export-quality-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 60px;
+    background-color: #f7fafc; 
+    direction: ltr; 
+}
+
+ 
+.hero-map-banner {
+    position: relative;
+    width: 100%;
+    height: 460px; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.hero-bg-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 1;
+    animation: slowzoom 2s ease-in-out infinite alternate;
+}
+@keyframes slowzoom{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.12);
+    }
+}
+
+
+
+
+.hero-overlay-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(15, 45, 89, 0.78); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.hero-overlay-content h1 {
+    color: #ffffff; 
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4); 
+}
+
+.hero-overlay-content p {
+    color: #e2e8f0; 
+    font-size: 1.15rem;
+    max-width: 800px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+
+.download-actions-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-download {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-pdf {
+    background-color: #3182ce; 
+    color: white;
+}
+
+.btn-pdf:hover {
+    background-color: #2b6cb0;
+    transform: translateY(-2px);
+}
+
+.btn-excel {
+    background-color: #2f855a; 
+    color: white;
+}
+
+.btn-excel:hover {
+    background-color: #22543d;
+    transform: translateY(-2px);
+}
+
+/* Top Icon Header Grid */
+.top-icons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto 50px auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.top-icon-box {
+    text-align: center;
+    width: 250px;
+}
+
+.icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background-color: #ebf8ff; 
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    margin: 0 auto 15px auto;
+    box-shadow: 0 4px 12px rgba(0, 149, 255, 0.1);
+}
+
+.top-icon-box h4 {
+    color: #0f2d59; 
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Grid Layout for Text and Media */
+.content-media-grid {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.text-column {
+    flex: 1.2;
+    min-width: 320px;
+    text-align: left;
+}
+
+.text-block h2 {
+    color: #0f2d59; 
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    
+}
+
+.text-block p {
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Side Layout Images Column */
+.image-column {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-card-wrapper {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+    border: 1px solid #e2e8f0;
+}
+
+.side-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Logistics Table Settings */
+.shipping-table-container {
+    max-width: 1100px;
+    margin: 0 auto 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.shipping-table-container h3 {
+    color: #0f2d59;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 12px;
+}
+
+.shipping-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.shipping-table th, .shipping-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #edf2f7;
+    text-align: left;
+}
+
+.shipping-table th {
+    background-color: #ebf8ff; 
+    color: #2b6cb0;
+    font-weight: bold;
+}
+
+.shipping-table tr:hover {
+    background-color: #f7fafc;
+}
+
+.status-verified {
+    color: #2f855a;
+    font-weight: bold;
+}
+
+/* Trust Badges Footer Area */
+.quality-badges-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: #0f2d59; 
+    padding: 22px;
+    border-radius: 50px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.badge-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
+.badge-icon {
+    font-size: 1.6rem;
+}
+
+.badge-text {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Responsive Design Modifications */
+@media (max-width: 768px) {
+    .content-media-grid {
+        flex-direction: column;
+    }
+    .hero-map-banner {
+        height: 520px; 
+    }
+    .hero-overlay-content h1 {
+        font-size: 2.1rem;
+    }
+    .quality-badges-container {
+        border-radius: 20px;
+        gap: 20px;
+    }
+}
+/* footer */
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--primary-color);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);;
+}
+
+footer .links ul li {
+    transition: 200ms all;
+}
+
+footer .links ul li a {
+    padding-bottom: 2px;
+}
+
+footer .links ul li a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+footer .links ul li:hover {
+    transform: translateY(-2px);
+}
+
+footer .contact .icons a {
+    padding: 2px;
+    font-size: 25px;
+    transition: 250ms all;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer .contact .icons a:hover {
+    color:white;
+}
+
+footer .copy {
+    text-align: center;
+}
