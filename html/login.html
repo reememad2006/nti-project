@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/nav and footer.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed 
+    top-0 start-0 end-0 z-20 shadow-md">
+        <div class="container p-2 px-1">
+            <a href="home.html" class="navbar-brand fw-bold text-dark fs-4">Home of Tech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav gap-4 ms-auto px-0">
+                    <li class="nav-item">
+                        <a href="../html/home.html" class="nav-link px-0 px-0 active">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="../html/about.html" class="nav-link px-0">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="../html/products.html" class="nav-link px-0">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="../html/export.html" class="nav-link px-0">Export</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="../html/contact.html" class="nav-link px-0">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex flex-row justify-content-center align-items-center vh-100 pt-5">
+        <form class="w-75 border border-1 border-dark border-opacity-25 p-5 rounded-2 bg-body-tertiary">
+            <h1 class="fs-2 py-2 border-bottom-myPrim w-fit mb-4">Sign into Home of Tech</h1>
+            <div class="mb-3">
+                <label for="email" class="form-label text-dark fs-5">Email Address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label fs-5">Password</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <p class="">Don't have an account? <a href="../html/register.html">Register here</a></p>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
