@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed 
+    top-0 start-0 end-0 z-20 shadow-md">
+            <div class="container p-2 px-1">
+                <a href="home.html" class="navbar-brand fw-bold text-dark fs-4">Home of Tech</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav gap-4 ms-auto px-0">
+                        <li class="nav-item">
+                            <a href="../html/home.html" class="nav-link px-0 px-0 active">Home</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="../html/about.html" class="nav-link px-0">About</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="../html/products.html" class="nav-link px-0">Products</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="../html/export.html" class="nav-link px-0">Export</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="../html/contact.html" class="nav-link px-0">Contact Us</a>
+                        </li>
+    
+                        <li class="nav-item" id="buttons">
+                            <button class="btn btn-outline-primary">Sign In</button>
+                            <button class="btn btn-outline-primary">Sign Up</button>
+                        </li>
+    
+                        <li class="userInfo d-none"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <section class="w-100 mt-70">
+            <img class="w-100 pc-banner" src="https://i.postimg.cc/FHrhydmd/pc-banner.jpg" alt="">
+            <img class="w-100  mobile-banner" src="https://i.postimg.cc/RVbgR2xR/mobile-banner.jpg" alt="">
+        </section>
+
+        <h2 class=" text-white bg-accent-color p-4 text-center mb-5 ">Our Collection</h2>
+
+
+        <input type="radio" id="all" name="filter" class="d-none" checked>
+        <input type="radio" id="mobile" name="filter" class="d-none">
+        <input type="radio" id="laptop" name="filter" class="d-none">
+
+        <div class="text-center ">
+            <label for="all" class="btn btn-outline-primary m-2">All</label>
+            <label for="mobile" class="btn btn-outline-primary m-2">Mobile</label>
+            <label for="laptop" class="btn btn-outline-primary m-2">Laptop</label>
+        </div>
+
+
+
+
+
+
+        <section id="products-parent">
+
+            <div class="products-child mobile-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://miamicenters.com/wp-content/uploads/2026/03/Samsung-Galaxy-S26-Ultra-1T16GB-4.webp"
+                            alt="">
+                        <img class="image2"
+                            src="https://miamicenters.com/wp-content/uploads/2026/03/Samsung-Galaxy-S26-Ultra-1T16GB-5.webp"
+                            alt="">
+                    </div>
+                    <h3>Samsung Galaxy S26 Ultra</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child laptop-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/07/HP-OMEN-MAX-16-ah0017ne-5.webp"
+                            alt="">
+                        <img class="image2"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/07/HP-OMEN-MAX-16-ah0017ne-3.webp"
+                            alt="">
+                    </div>
+                    <h3>HP OMEN MAX 16</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child mobile-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1" src="https://miamicenters.com/wp-content/uploads/2025/09/orange.png" alt="">
+                        <img class="image2" src="https://miamicenters.com/wp-content/uploads/2025/09/orangee.png"
+                            alt="">
+                    </div>
+                    <h3>Iphone 17 pro max</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child laptop-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2025/08/Lenovo-Legion-5-83F00045ED-10.webp"
+                            alt="">
+                        <img class="image2"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2025/08/Lenovo-Legion-5-83F00045ED-7.webp"
+                            alt="">
+                    </div>
+                    <h3>Lenovo Legion 5 </h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child mobile-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1" src="https://miamicenters.com/wp-content/uploads/2025/09/pink-17.png"
+                            alt="">
+                        <img class="image2" src="https://miamicenters.com/wp-content/uploads/2025/09/lavender.png"
+                            alt="">
+                    </div>
+                    <h3>Iphone 17 </h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child laptop-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2025/11/FA608PM-RV169W.webp"
+                            alt="">
+                        <img class="image2"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2025/09/ASUS-TUF-Gaming-A16-FA608UH-RV007W-9.webp"
+                            alt="">
+                    </div>
+                    <h3>ASUS TUF Gaming A16</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child mobile-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://miamicenters.com/wp-content/uploads/2026/01/oppo-reno-15-1-4.webp" alt="">
+                        <img class="image2"
+                            src="https://miamicenters.com/wp-content/uploads/2026/01/oppo-reno-15-1-1.webp" alt="">
+                    </div>
+                    <h3>Oppo Reno 15F </h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child laptop-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2025/05/ASUS-ROG-STRIX-SCAR-18-2.webp"
+                            alt="">
+                        <img class="image2"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2025/05/ASUS-ROG-STRIX-SCAR-18-4.webp"
+                            alt="">
+                    </div>
+                    <h3>ASUS ROG Strix SCAR 18</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child mobile-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/07/Vivo-X300-Ultra-5G-green-5.jpg"
+                            alt="">
+                        <img class="image2"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/07/Vivo-X300-Ultra-5G-green-7.jpg"
+                            alt="">
+                    </div>
+                    <h3>Vivo X300 Ultra</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child laptop-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/02/Apple-MacBook-Pro-14-inch-M5-Chip-with-10-Core-CPU-10-Core-GPU-16GB-512GB-SSD-Storage-_7149_1.webp"
+                            alt="">
+                        <img class="image2"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/02/MacBook_Pro_16-inch_M4_Pro_or_Max_chip_Silver_PDP_Image_Position_2__en-ME-scaled-1.jpg"
+                            alt="">
+                    </div>
+                    <h3>MacBook Pro 14</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child mobile-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2025/11/Nothing-CMF-Phone-3a-Pro-5G-grey-1.jpg"
+                            alt="">
+                        <img class="image2"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2025/11/Nothing-CMF-Phone-3a-Pro-Dual-Sim-256GB-12GB-Ram-5G_6626_1.webp"
+                            alt="">
+                    </div>
+                    <h3>Nothing 3a Pro</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child laptop-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/08/ASUS-Zenbook-S-14-UX5406AA.webp"
+                            alt="">
+                        <img class="image2"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/08/UX5406AA-SW317W-2.jpg"
+                            alt="">
+                    </div>
+                    <h3>ASUS Zenbook S 14</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child mobile-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/07/Xiaomi-17T-5G-Black-4.jpg"
+                            alt="">
+                        <img class="image2"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/07/Xiaomi-17T-5G-Black-8.jpg"
+                            alt="">
+                    </div>
+                    <h3>Xiaomi 17T</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child laptop-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2025/10/Apple-MacBook-Air-13-inch-M4-Chip-with-10-Core-CPU-10-Core-GPU-24GB-512GB-SSD-Storage-_6493_1-1.webp"
+                            alt="">
+                        <img class="image2"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/03/MacBook_Air_13-inch_M4_Midnight_PDP_Image_Position_2__en-SA-scaled-1.jpg"
+                            alt="">
+                    </div>
+                    <h3>MacBook Air 15-inch</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child mobile-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/01/Xiaomi-Redmi-Note-15-4g-blue-5.jpg"
+                            alt="">
+                        <img class="image2"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/01/Xiaomi-Redmi-Note-15-Dual-Sim-256GB-8GB-Ram-5G_7092_1.webp"
+                            alt="">
+                    </div>
+                    <h3>Redmi Note 15</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+            <div class="products-child laptop-card">
+                <div>
+                    <div class="image-container">
+                        <img class="image1"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/02/NVIDIA-LOGOS-copy.webp"
+                            alt="">
+                        <img class="image2"
+                            src="https://assets-dubaiphone.dubaiphone.net/dp-prod/wp-content/uploads/2026/02/16-ay0007ne-1-1.webp"
+                            alt="">
+                    </div>
+                    <h3>HP OmniBook 7</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(28)</span>
+                    </div>
+                    <p>$1,199 <span>$1,300</span></p>
+                </div>
+                <div class="add-to">
+                    <a class="share" href=""><i class="fa-solid fa-share"></i></a>
+                    <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="heart" href=""><i class="fa-solid fa-heart "></i></a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-dark">
+        <div class="container py-5">
+            <div class="row">
+                <div class="links col-md-3">
+                    <h3>Page Links</h3>
+                    <ul class="p-2">
+                        <li><a href="../html/home.html">Home</a></li>
+                        <li><a href="../html/about.html">About</a></li>
+                        <li><a href="../html/products.html">Products</a></li>
+                        <li><a href="../html/export.html">Export</a></li>
+                        <li><a href="../html/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 d-flex flex-column contact">
+                    <h3>Contact us here</h3>
+                    <ul class="ps-0 py-2">
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+20-121-356-2242<span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>homeoftech@gmail.com</span>
+                        </li>
+                    </ul>
+                    <div class="icons gap-2 d-flex justify-content-lg-between">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <p class="copy py-1">Copyrights &copy;2026, All Rights Reserved - Home of Tech</p>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

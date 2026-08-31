@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <title>Home</title>
 </head>
+
 <body>
     <!-- nav -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed 
@@ -43,8 +46,13 @@
                     </li>
 
                     <li class="nav-item" id="buttons">
-                        <button class="btn btn-outline-primary">Sign In</button>
-                        <button class="btn btn-outline-primary">Sign Up</button>
+                        <a href="../html/login.html" class="text-decoration-none">
+                            <button class="btn btn-outline-primary">Sign In</button>
+                        </a>
+
+                        <a href="../html/register.html" class="text-decoration-none">
+                            <button class="btn btn-outline-primary">Sign Up</button>
+                        </a>
                     </li>
 
                     <li class="userInfo d-none"></li>
@@ -62,7 +70,8 @@
                 <div class=" py-5 text-light col-md-5">
                     <h1 class="h1">Shop all of your favorite tech <span class="text-dark">in one place</span></h1>
                     <p class="text-white-75">Bringing to you all the latest models and gadgets <br>
-                        before everyone else. <a href="../html/products.html" class="text-white-75 text-white-100-hover">Shop
+                        before everyone else. <a href="../html/products.html"
+                            class="text-white-75 text-white-100-hover">Shop
                             Here</a>
                     </p>
                 </div>
@@ -142,11 +151,11 @@
                 <div class="links col-md-3">
                     <h3>Page Links</h3>
                     <ul class="p-2">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Export</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="../html/home.html">Home</a></li>
+                        <li><a href="../html/about.html">About</a></li>
+                        <li><a href="../html/products.html">Products</a></li>
+                        <li><a href="../html/export.html">Export</a></li>
+                        <li><a href="../html/contact.html">Contact</a></li>
                     </ul>
                 </div>
 
@@ -177,4 +186,5 @@
 
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

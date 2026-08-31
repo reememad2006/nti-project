@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/nav and footer.css">
+    <link rel="stylesheet" href="../css/general.css">
     <title>Login</title>
 </head>
 
-<body>
+<body style="background-color: #0f172a;">
     <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed 
     top-0 start-0 end-0 z-20 shadow-md">
         <div class="container p-2 px-1">
@@ -46,20 +46,62 @@
 
     <!-- form container -->
     <div class="container d-flex flex-row justify-content-center align-items-center vh-100 pt-5">
-        <form class="w-75 border border-1 border-dark border-opacity-25 p-5 rounded-2 bg-body-tertiary">
+        <form class="w-75 border border-1 border-dark border-opacity-10 p-5 rounded-2 bg-white">
             <h1 class="fs-2 py-2 border-bottom-myPrim w-fit mb-4">Sign into Home of Tech</h1>
             <div class="mb-3">
                 <label for="email" class="form-label text-dark fs-5">Email Address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="email" placeholder="enter your email">
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label fs-5">Password</label>
-                <input type="password" class="form-control" id="password">
+                <input type="password" class="form-control" id="password" placeholder="enter your password">
             </div>
-            <p class="">Don't have an account? <a href="../html/register.html">Register here</a></p>
+            <p>Don't have an account? <a href="../html/register.html" class="fw-bold text-decoration-none">Register here</a></p>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+
+        <!-- footer -->
+        <footer style="background-color: #0c1322;">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="links col-md-3">
+                        <h3>Page Links</h3>
+                        <ul class="p-2">
+                            <li><a href="../html/home.html">Home</a></li>
+                            <li><a href="../html/about.html">About</a></li>
+                            <li><a href="../html/products.html">Products</a></li>
+                            <li><a href="../html/export.html">Export</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-3 d-flex flex-column contact">
+                        <h3>Contact us here</h3>
+                        <ul class="ps-0 py-2">
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+20-121-356-2242<span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>homeoftech@gmail.com</span>
+                            </li>
+                        </ul>
+                        <div class="icons gap-2 d-flex justify-content-lg-between">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copy py-1">Copyrights &copy;2026, All Rights Reserved - Home of Tech</p>
+        </footer>
+    
+        <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
