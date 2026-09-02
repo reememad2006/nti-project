@@ -13,62 +13,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* 
-header {
-
-    height: 75px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    padding: 0 8%;
-
-    background-color: white;
-
-    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.301);
-
-    position: relative;
-
-    z-index: 20;
-}
-
-header h2 {
-
-    margin: 0;
-
-    color: var(--primary-color);
-}
-
-nav ul {
-
-    display: flex;
-
-    gap: 25px;
-
-    margin: 0;
-
-    padding: 0;
-}
-
-.nav-item a {
-
-    text-decoration: none;
-
-    color: var(--primary-color);
-
-    transition: 200ms all;
-}
-
-.nav-item a:hover {
-
-    color: var(--accent-color);
-} */
-
-
-
 .contact-form {
 
     min-height: 650px;
@@ -191,120 +135,12 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.contact-form button:hover {
 
     background-color: var(--accent-color);
 
     color: white;
 }
-
-/* 
-footer {
-
-    display: flex;
-
-    flex-flow: column wrap;
-
-    background-color: var(--primary-color);
-
-    color: rgba(255, 255, 255, 0.9);
-
-    padding: 45px 9% 20px;
-}
-
-footer a {
-
-    text-decoration: none;
-
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.footer-content {
-
-    display: flex;
-
-    gap: 180px;
-}
-
-
-
-.links ul {
-
-    padding: 0;
-
-    margin: 0;
-}
-
-.links ul li {
-
-    transition: 200ms all;
-
-    margin-bottom: 8px;
-}
-
-.links ul li a {
-
-    padding-bottom: 2px;
-}
-
-.links ul li a:hover {
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-}
-
-.links ul li:hover {
-
-    transform: translateY(-2px);
-}
-
-
-
-.contact-info p {
-
-    color: rgba(255, 255, 255, 0.75);
-}
-
-.icons {
-
-    margin-top: 25px;
-}
-
-.icons a {
-
-    padding: 2px;
-
-    font-size: 25px;
-
-    transition: 250ms all;
-
-    color: rgba(255, 255, 255, 0.7);
-
-    margin-right: 15px;
-}
-
-.icons a:hover {
-
-    color: rgb(135, 9, 246);
-}
-
-
-
-.copy {
-
-    text-align: center;
-
-    margin-top: 50px;
-
-    padding-top: 20px;
-
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.copy p {
-
-    color: rgba(255, 255, 255, 0.75);
-} */
-
 
 
 @media (max-width: 750px) {
