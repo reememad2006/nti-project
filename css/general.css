@@ -33,6 +33,18 @@
 }
 
 /* nav */
+@media screen and (max-width: 991px) {
+    .navbar-nav {
+        gap: 0.5rem !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-nav .nav-link {
+        padding-left: 0.5rem;
+    }
+}
+
 .nav-item a:hover {
     color: var(--accent-color);
     color: var(--accent-color);
@@ -67,6 +79,17 @@ footer .links ul li:hover {
     transform: translateY(-2px);
 }
 
+footer .contact {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    footer .contact {
+        width: 33%;
+    }
+}
+
 footer .contact .icons a {
     padding: 2px;
     font-size: 25px;
@@ -81,4 +104,25 @@ footer .contact .icons a:hover {
 
 footer .copy {
     text-align: center;
+}
+
+/* back to top */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: #0f2d59;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background-color: #2b6cb0;
 }
