@@ -5,8 +5,8 @@ let password = document.querySelector("#password")
 
 let regFirst = /^[A-Za-z]{3,8}$/
 let regLast = /^[A-Za-z]{3,8}$/
-let regEmail = /^[A-Za-z][A-Z a-z 0-9 _]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-let regPass = /^[A-Z a-z 0-9]{8,}$/
+let regEmail = /^[A-Za-z][A-Za-z0-9 _]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+let regPass = /^[A-Za-z 0-9]{8,}$/
 
 let fnameError = document.getElementById("fnameError")
 let lnameError = document.getElementById("lnameError")
