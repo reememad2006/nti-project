@@ -13,7 +13,7 @@ form.addEventListener("submit", (e) => {
         localStorage.setItem("loggedUser", JSON.stringify(matchedUser))
         form.reset()
         setTimeout(() => {
-            window.location = "../html/home.html"
+            window.location = "../index.html"
         }, 500)
     } else {
         formError.textContent = "Invalid email or password"
